@@ -2,7 +2,7 @@ const res = document.getElementById("result");
 function calculate(value) {
     const calculateVAlue = eval(value || null);
     if (isNaN(calculateVAlue)) {
-        res.value = "Cant divide 0 with 0";
+        res.value = "Math Error";
         setTimeout(() => { res.value = ""; }, 1300);
     }
     else {
@@ -72,9 +72,9 @@ function keyboardInputHandler(e) {
     }
 
     // press enter to see result
-    // if (e.key === "Enter") {
-    //     calculate(result.value);
-    // }
+    if (e.key === "Enter") {
+        calculate(result.value);
+    }
 
     //backspace for removing the last input
     if (e.key === "Backspace") {

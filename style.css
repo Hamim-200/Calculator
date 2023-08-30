@@ -60,7 +60,7 @@ input {
 .third-row,
 .fourth-row,
 .fifth-row {
-    margin-bottom: 4px;
+    margin-bottom:3px;
 }
 
 input[type="text"] {
@@ -74,6 +74,7 @@ input[type="button"]:hover {
 }
 
 #clear-button {
+    font-weight: 700;
     color: #fff;
     background-color: rgb(255, 42, 42);
 }
